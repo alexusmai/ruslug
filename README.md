@@ -15,12 +15,12 @@
 
 В `app/config/app.php` добавьте в массив провайдеров.
 
-  `'Alexusmai\Ruslug\RuslugServiceProvider',`
+  `Alexusmai\Ruslug\RuslugServiceProvider::class,`
 
 И добавьте новый алиас
 
-  `'Slug'    => 'Alexusmai\Ruslug\RuslugFacade',`
+  `'Slug'     => Alexusmai\Ruslug\RuslugFacade::class,`
 
 Использование
 -------
-Вызов метода: `Slug::make($text)`
+Вызов метода: `\Slug::make($text)`
