@@ -1,15 +1,8 @@
-<?php namespace Alexusmai\Ruslug;
+<?php
+namespace Alexusmai\Ruslug;
 
-use Illuminate\Support\ServiceProvider;
+class RuslugServiceProvider extends \Illuminate\Support\ServiceProvider{
 
-class RuslugServiceProvider extends ServiceProvider {
-
-	/**
-	 * Indicates if loading of the provider is deferred.
-	 *
-	 * @var bool
-	 */
-	protected $defer = false;
 
 	/**
 	 * Register the service provider.
@@ -18,19 +11,9 @@ class RuslugServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->bindShared('slug', function(){
-            return $this->app->make('Alexusmai\Ruslug\Slug');
+		$this->app->bind('slug', function($app){
+            return new Slug($app);
         });
-	}
-
-	/**
-	 * Get the services provided by the provider.
-	 *
-	 * @return array
-	 */
-	public function provides()
-	{
-		return [];
 	}
 
 }

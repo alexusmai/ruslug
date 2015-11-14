@@ -1,9 +1,8 @@
-<?php namespace Alexusmai\Ruslug;
+<?php
+namespace Alexusmai\Ruslug;
 
 
-use Illuminate\Support\Facades\Facade;
-
-class RuslugFacade extends Facade{
+class RuslugFacade extends \Illuminate\Support\Facades\Facade{
 
     protected static function getFacadeAccessor(){
         return 'slug';
