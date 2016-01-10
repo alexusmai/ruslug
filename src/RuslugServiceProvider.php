@@ -1,7 +1,8 @@
-<?php
-namespace Alexusmai\Ruslug;
+<?php namespace Alexusmai\Ruslug;
 
-class RuslugServiceProvider extends \Illuminate\Support\ServiceProvider{
+use Illuminate\Support\ServiceProvider;
+
+class RuslugServiceProvider extends ServiceProvider{
 
 
 	/**

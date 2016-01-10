@@ -1,12 +1,20 @@
 {
     "name": "alexusmai/ruslug",
-    "description": "Ru Slug , Laravel 5",
+    "description": "Laravel 5 RuSlug",
+    "keywords": [
+        "laravel 5",
+        "slug",
+        "ru"
+    ],
     "authors": [
         {
             "name": "alexusmai",
-            "email": "alexusmai@gmail.com"
+            "email": "alexusmai@gmail.com",
+            "role": "Developer"
         }
     ],
+    "homepage": "https://github.com/alexusami/ruslug",
+    "license": "MIT",
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "5.0.*|5.1.*"
@@ -15,6 +23,5 @@
         "psr-4": {
             "Alexusmai\\Ruslug\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
