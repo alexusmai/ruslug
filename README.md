@@ -6,7 +6,7 @@
 "alexusmai/ruslug": "dev-master"
 
     "require": {
-        "alexusmai/ruslug": "dev-master"
+        "alexusmai/ruslug": "~0.1"
     },
 
 Затем выполните команду:
