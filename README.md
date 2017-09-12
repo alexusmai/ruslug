@@ -6,14 +6,14 @@
 Установка
 -------
 Добавьте в файл `composer.json` строку
-"alexusmai/ruslug": "dev-master"
+"alexusmai/ruslug": "~0.6"
 
     "require": {
-        "alexusmai/ruslug": "~0.1"
+        "alexusmai/ruslug": "~0.6"
     },
 
 Затем выполните команду:
-    `composer update`
+    `composer install`
 
 
 В `app/config/app.php` добавьте в массив провайдеров.
