@@ -23,5 +23,15 @@
         "psr-4": {
             "Alexusmai\\Ruslug\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alexusmai\\Ruslug\\RuslugServiceProvider"
+            ],
+            "aliases": {
+                "Slug": "Alexusmai\\Ruslug\\RuslugFacade"
+            }
+        }
+    },
 }
