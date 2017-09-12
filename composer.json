@@ -17,11 +17,21 @@
     "license": "MIT",
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*"
+        "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*"
     },
     "autoload": {
         "psr-4": {
             "Alexusmai\\Ruslug\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alexusmai\\Ruslug\\RuslugServiceProvider"
+            ],
+            "aliases": {
+                "Slug": "Alexusmai\\Ruslug\\RuslugFacade"
+            }
         }
     }
 }
