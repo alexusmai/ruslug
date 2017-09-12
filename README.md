@@ -16,11 +16,11 @@
     `composer install`
 
 
-В `app/config/app.php` добавьте в массив провайдеров.
+Если у вас установлен Laravel 5.4 или более ранней версии, то в `app/config/app.php` нужно добавить провайдера:
 
   `Alexusmai\Ruslug\RuslugServiceProvider::class,`
 
-И добавьте новый алиас
+И добавить новый алиас:
 
   `'Slug'     => Alexusmai\Ruslug\RuslugFacade::class,`
 
