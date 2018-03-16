@@ -3,7 +3,7 @@
 [![Total Downloads](https://poser.pugx.org/alexusmai/ruslug/downloads)](https://packagist.org/packages/alexusmai/ruslug)
 [![Latest Unstable Version](https://poser.pugx.org/alexusmai/ruslug/v/unstable)](https://packagist.org/packages/alexusmai/ruslug) [![License](https://poser.pugx.org/alexusmai/ruslug/license)](https://packagist.org/packages/alexusmai/ruslug)
 
-##Установка
+## Установка
 
 ``` bash
 composer require alexusmai/ruslug
@@ -17,6 +17,6 @@ composer require alexusmai/ruslug
 
   `'Slug'     => Alexusmai\Ruslug\RuslugFacade::class,`
 
-##Использование
+## Использование
 
 Вызов метода: `\Slug::make($text)`
