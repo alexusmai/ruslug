@@ -3,20 +3,13 @@
 [![Total Downloads](https://poser.pugx.org/alexusmai/ruslug/downloads)](https://packagist.org/packages/alexusmai/ruslug)
 [![Latest Unstable Version](https://poser.pugx.org/alexusmai/ruslug/v/unstable)](https://packagist.org/packages/alexusmai/ruslug) [![License](https://poser.pugx.org/alexusmai/ruslug/license)](https://packagist.org/packages/alexusmai/ruslug)
 
-Установка
--------
-Добавьте в файл `composer.json` строку
-"alexusmai/ruslug": "~0.6"
+##Установка
 
-    "require": {
-        "alexusmai/ruslug": "~0.6"
-    },
+``` bash
+composer require alexusmai/ruslug
+```
 
-Затем выполните команду:
-    `composer install`
-
-
-Если у вас установлен Laravel 5.4 или более ранней версии, то в `app/config/app.php` нужно добавить провайдера:
+Если у вас установлен Laravel 5.4 или более ранней версии, то в `config/app.php` нужно добавить провайдера:
 
   `Alexusmai\Ruslug\RuslugServiceProvider::class,`
 
@@ -24,6 +17,6 @@
 
   `'Slug'     => Alexusmai\Ruslug\RuslugFacade::class,`
 
-Использование
--------
+##Использование
+
 Вызов метода: `\Slug::make($text)`
